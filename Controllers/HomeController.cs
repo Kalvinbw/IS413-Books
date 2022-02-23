@@ -25,8 +25,10 @@ namespace Books.Controllers
         // GET
         public IActionResult Index(string bookCategory, int pageNum = 1)
         {
+            // set the num books per page to 5
             int pageSize = 5;
 
+            // instantiate the books view model for the page
             var x = new BooksViewModel
             {
                 Books = repo.Books
