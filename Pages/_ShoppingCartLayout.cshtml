@@ -24,30 +24,16 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="/ShoppingCart">My Shopping Cart</a>
-                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="row m-1 p1">
-        <div class="col-3" id="categories">
-            <vc:categories></vc:categories>
-        </div>
-
-        <div class="col-9">
-            <div>
-                @RenderBody()
-            </div>
-        </div>
-    </div>
-    @*<div class="container">
+    <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
-    </div>*@
+    </div>
 
     <footer class="border-top footer text-muted">
         <div class="container">
