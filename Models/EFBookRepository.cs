@@ -13,5 +13,23 @@ namespace Books.Models
         }
 
         public IQueryable<Book> Books => context.Books;
+
+        public void Savebook(Book p)
+        {
+            context.Update(p);
+            context.SaveChanges();
+        }
+
+        public void CreateBook(Book p)
+        {
+            context.Add(p);
+            context.SaveChanges();
+        }
+
+        public void DeleteBook(Book p)
+        {
+            context.Remove(p);
+            context.SaveChanges();
+        }
     }
 }
