@@ -41,5 +41,8 @@ namespace Books.Models
         [Required(ErrorMessage = "Please enter an email")]
         public string Email { get; set; }
 
+        [BindNever]
+        public bool Shipped { get; set; }
+
     }
 }
